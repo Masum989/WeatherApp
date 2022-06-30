@@ -1,0 +1,152 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+     font-family: 'Open Sans', sans-serif; 
+    background: #222;
+    
+    font-size: 120%;
+    background: rgb(34,193,195);
+    
+    background: linear-gradient(0deg, rgba(34,193,195,1) 22%, rgba(34,193,195,1) 24%, rgba(253,187,45,1) 100%);
+  }
+  .h1 h1{
+    padding-left: 90px;
+    margin-bottom: 90px;
+    font-size: 50px;
+    color: whitesmoke;
+   
+  }
+  .h1 span{
+    color: crimson;
+  }
+  
+  .card {
+    background: #090909d0;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+    opacity: 1;
+  }
+  
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 44px;
+    width: 44px;
+    outline: none;
+    background: #7c7c7c2b;
+    color: crimson;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  
+  input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    background: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+    font-size: 105%;
+    width: calc(100% - 100px);
+  }
+  
+  button:hover {
+    background: #7c7c7c6b;
+  }
+  
+  h1.temp {
+    margin: 0;
+    margin-bottom: 0.4em;
+  }
+  
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+  
+  .description {
+    text-transform: capitalize;
+    margin-left: 8px;
+  }
+  
+  .weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+  }
+  
+  .weather.loading:after { 
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+  }
+
+  @media only screen and (max-width: 582px){
+  .card{
+    margin-right: 90px;
+  }
+
+  }
+  
+  @media only screen and (max-width: 515px){
+    .card{
+        margin-right: 40px;
+        max-width: 300px;
+    }
+    .h1 h1{
+        padding-left: 48px;
+    }
+  }
+  @media only screen and (max-width: 400px){
+    .card{
+        margin-right: 40px;
+        max-width: 270px;
+    }
+    .h1 h1{
+        padding-left: 48px;
+    }
+  }
+  @media only screen and (max-width: 350px){
+    
+    
+    .card{
+        margin-right: 50px;
+        max-width: 250px;
+    }
+    .h1 h1{
+        padding-left: 48px;
+
+    }
+  }
+  @media only screen and (max-width: 320px){
+    body{
+        height: 100vh;
+    }
+    .card{
+        margin-right: 90px;
+        max-width: 220px;
+    }
+    .h1 h1{
+        padding-left: 48px;
+    }
+  }
+ 
